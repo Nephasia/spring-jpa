@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres_test
+
+  jpa:
+    open-in-view: false
+    show-sql: true
+
+    hibernate:
+      ddl-auto: create
+
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: ${port:8100}
+
+
